@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9ac69a6629.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet"> 
+    <title>Instagram Feed Bootstrap</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-light mb-1">
+  <a class="navbar-brand ml-5" href="#">
+    <i class="fab fa-instagram 5x"></i>
+    Instagram
+  </a>
+  <div class="d-flex justify-content-end">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModal">
+  Create New Post
+</button>
+            
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enter your link here</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btn-group dropdown dropleft">
+  <button type="button" class="btn btn-secondary dropdown-toggle mr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-cog"></i>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Settings</a>
+    <a class="dropdown-item" href="#">Preferences</a>
+    <a class="dropdown-item" href="#">Options</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Log Out</a>
+  </div>
+</div>
+</div>
+</nav>
+
+ <!--pills-->
+
+<div class="content">
+    <div class="d-flex justify-content-center">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active bg-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active bg-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true"><i class="far fa-square"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                <img src="https://picsum.photos/id/237/350/250"/>
+                </div>
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/10/350/250.jpg?hmac=u2foHhrh5ZeKxqlLIlNHw__rAAQ1btgSscjSu6TkpRY"/>
+                </div>
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/1016/350/250.jpg?hmac=dzaTOynhxPynMIHlLKv8QAtXdd3p8kqidx-erOpiFMk"/>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/1018/350/250.jpg?hmac=sTRssbYwh7AgRIi_GoqKIbqFY8cRJMMRolyjM5o8oUQ"/>
+                </div>
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/1036/350/250.jpg?hmac=PMJ0cSGoWtigUlX15mp4zecAGx6JGcpU-60p01bb5Qg"/>
+                </div>
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/1044/350/250.jpg?hmac=5QOF13qDwzIrcdx8WuocTdqfDxJeY49HjNzVxNGJluc"/>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/12/350/250.jpg?hmac=JzT1_Sk1oiFZ3fMn3G1PJSwzeeSOcBhbqGx-3otVkRM"/>
+                </div>
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/128/350/250.jpg?hmac=ElSaLqpZX1eGWWANTGrUgNL550qQz0gZRjQhMmBindk"/>
+                </div>
+                <div class="col-sm">
+                <img src="https://i.picsum.photos/id/154/350/250.jpg?hmac=Lm3qnKyqaB0a7TdAHhCNIze1X1akTN3duBLBRKW7Lw0"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-container d-flex justify-content-center">
+        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> 
+            <div class="card" style="width: 24rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://picsum.photos/id/237/350/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
