@@ -8,14 +8,15 @@
     <script src="https://kit.fontawesome.com/9ac69a6629.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <title>Instagram Feed Bootstrap</title>
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-light bg-light mb-1">
-  <a class="navbar-brand ml-5" href="#">
-    <i class="fab fa-instagram 5x"></i>
-    Instagram
+<nav class="navbar navbar-light mb-3 container" style="background-color: #d3d6d8;">
+  <a class="navbar-brand ml-2" href="#">
+    <i class="fab fa-instagram fa-lg"></i>
+    <h3>Instagram</h3>
   </a>
   <div class="d-flex justify-content-end">
 <!-- Button trigger modal -->
@@ -36,16 +37,20 @@
       <div class="modal-body">
         ...
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Save changes</button>
+      <div class="modal-footer d-flex bd-highlight p-0">
+        <div class="p-2 mr-auto bd-highlight">
+            <i class="fas fa-camera-retro fa-2x"></i> 
+            <i class="fas fa-hashtag fa-2x ml-1"></i> 
+        </div>    
+        <div class="p-2 bd-highlight mr-0"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div>
+        <div class="p-2 bd-highlight ml-0"><button type="button" class="btn btn-success">Save changes</button></div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="btn-group dropdown dropleft">
-  <button type="button" class="btn btn-secondary dropdown-toggle mr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="btn-group dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle mr-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <i class="fas fa-cog"></i>
   </button>
   <div class="dropdown-menu">
@@ -65,19 +70,20 @@
     <div class="d-flex justify-content-center">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active bg-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i>
+                <a class="nav-link active bg-secondary text-white mr-2" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i>
                 </a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link active bg-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true"><i class="far fa-square"></i>
+                <a class="nav-link bg-secondary text-white" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="far fa-square"></i>
                 </a>
             </li>
         </ul>
     </div>
-<div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="container">
-            <div class="row">
+
+<div class="container">
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row mb-3">
                 <div class="col-sm">
                 <img src="https://picsum.photos/id/237/350/250"/>
                 </div>
@@ -88,8 +94,7 @@
                 <img src="https://i.picsum.photos/id/1016/350/250.jpg?hmac=dzaTOynhxPynMIHlLKv8QAtXdd3p8kqidx-erOpiFMk"/>
                 </div>
             </div>
-            <br>
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-sm">
                 <img src="https://i.picsum.photos/id/1018/350/250.jpg?hmac=sTRssbYwh7AgRIi_GoqKIbqFY8cRJMMRolyjM5o8oUQ"/>
                 </div>
@@ -100,8 +105,7 @@
                 <img src="https://i.picsum.photos/id/1044/350/250.jpg?hmac=5QOF13qDwzIrcdx8WuocTdqfDxJeY49HjNzVxNGJluc"/>
                 </div>
             </div>
-            <br>
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-sm">
                 <img src="https://i.picsum.photos/id/12/350/250.jpg?hmac=JzT1_Sk1oiFZ3fMn3G1PJSwzeeSOcBhbqGx-3otVkRM"/>
                 </div>
@@ -113,10 +117,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card-container d-flex justify-content-center">
-        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> 
-            <div class="card" style="width: 24rem;">
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="card m-auto" style="width: 28rem;">
                 <div class="card-header pb-1 pt-1">
                     <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
                 </div>
@@ -131,8 +133,137 @@
                     <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
                 </div>
             </div>
+            <br>
+             <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/10/350/250.jpg?hmac=u2foHhrh5ZeKxqlLIlNHw__rAAQ1btgSscjSu6TkpRY" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+             <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/1016/350/250.jpg?hmac=dzaTOynhxPynMIHlLKv8QAtXdd3p8kqidx-erOpiFMk" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+            <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/1018/350/250.jpg?hmac=sTRssbYwh7AgRIi_GoqKIbqFY8cRJMMRolyjM5o8oUQ" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+            <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/1036/350/250.jpg?hmac=PMJ0cSGoWtigUlX15mp4zecAGx6JGcpU-60p01bb5Qg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+            <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/1044/350/250.jpg?hmac=5QOF13qDwzIrcdx8WuocTdqfDxJeY49HjNzVxNGJluc" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+            <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/12/350/250.jpg?hmac=JzT1_Sk1oiFZ3fMn3G1PJSwzeeSOcBhbqGx-3otVkRM" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+            <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/128/350/250.jpg?hmac=ElSaLqpZX1eGWWANTGrUgNL550qQz0gZRjQhMmBindk" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
+            <br>
+            <div class="card m-auto" style="width: 28rem;">
+                <div class="card-header pb-1 pt-1">
+                    <div class="d-flex justify-content-between"><p>My First Picture</p><p>Date</p></div> 
+                </div>
+                <img src="https://i.picsum.photos/id/154/350/250.jpg?hmac=Lm3qnKyqaB0a7TdAHhCNIze1X1akTN3duBLBRKW7Lw0" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">25 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight"><i class="far fa-heart"></i></div>
+                    <div class="p-2 bd-highlight">Comment</div>
+                    <div class="ml-auto p-2 bd-highlight"><i class="fas fa-ellipsis-v"></i></div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div>  
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
